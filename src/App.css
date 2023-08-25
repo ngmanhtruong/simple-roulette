@@ -23,13 +23,6 @@
   }
 }
 
-/* .welcome {
-  min-width: 1280px;
-  min-height: 100%;
-  position: absolute;
-  z-index: 2;
-} */
-
 .phone-input {
   margin-bottom: 2rem;
   outline: none;
@@ -39,7 +32,7 @@
   color: #61dafb;
   font-size: 2rem;
   text-align: center;
-  max-width: 400px;
+  max-width: 250px;
   padding: 0.5rem;
 }
 

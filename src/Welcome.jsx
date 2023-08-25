@@ -41,7 +41,9 @@ function Welcome() {
             <Typography id="transition-modal-description" sx={{ mt: 2, padding: '1rem 0' }}>
               Please enter your phone number to continue
             </Typography>
-            <input type="text" placeholder="Enter your phone number" className="phone-input" onChange={handlePhoneChange} />
+            <Box display="flex" justifyContent="center">
+              <input type="text" placeholder="Your phone" className="phone-input" onChange={handlePhoneChange} />
+            </Box>
             <Box display="flex" justifyContent="center">
               <button className="continue-button" onClick={handleClose}>
                 Continue

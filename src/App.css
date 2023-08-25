@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 1em #61dafb, 0 0 2em #61dafb, 0 0 4em #61dafb,
+      0 0 8em #61dafb, 0 0 16em #61dafb;
+    opacity: 0.1;
+  } to {
+    text-shadow: 0 0 2em #61dafb, 0 0 4em #61dafb, 0 0 8em #61dafb,
+      0 0 16em #61dafb, 0 0 32em #61dafb;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* .welcome {
+  min-width: 1280px;
+  min-height: 100%;
+  position: absolute;
+  z-index: 2;
+} */
+
+.phone-input {
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #61dafb;
+  background-color: transparent;
+  color: #61dafb;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 400px;
+  padding: 0.5rem;
+}
+
+.continue-button {
+
+}
+
+.application {
+  /* position: relative; */
+}
+
+.glowing-text {
+  color: #61dafb;
+  animation: glowing infinite 4s linear;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.spin-button {
+  color: #61dafb;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  margin-bottom: 2rem;
+}
+

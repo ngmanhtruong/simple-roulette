@@ -10,7 +10,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 300,
   border: '2px solid #000',
   backgroundColor: '#242424',
   boxShadow: 24,
@@ -19,7 +19,7 @@ const style = {
 
 function Welcome() {
   const {handlePhoneChange, phone, handleCloseWelcome, open} = React.useContext(AppContext)
-  
+
   const handleClose = () => {
     toast.info(`Welcome ${phone}`);
     handleCloseWelcome();

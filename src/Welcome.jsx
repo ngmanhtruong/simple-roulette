@@ -18,11 +18,11 @@ const style = {
 };
 
 function Welcome() {
-  const {handlePhoneChange, phone, handleCloseWelcome, open} = React.useContext(AppContext)
+  const {handlePhoneChange, phone, onCloseWelcome, open} = React.useContext(AppContext)
 
   const handleClose = () => {
     toast.info(`Welcome ${phone}`);
-    handleCloseWelcome();
+    onCloseWelcome();
   };
 
   return (

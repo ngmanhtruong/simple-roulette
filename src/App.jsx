@@ -11,6 +11,7 @@ export const AppContext = React.createContext();
 export const AppProvider = ({ children }) => {
   const [welcomeOpen, setWelcomeOpen] = React.useState(true);
   const [phone, setPhone] = React.useState('');
+  const [phoneDisplay, setPhoneDisplay] = React.useState(false);
   const handleClose = () => setWelcomeOpen(false);
 
   const inputValidation = () => {
@@ -33,10 +34,11 @@ export const AppProvider = ({ children }) => {
 
   const handleCloseWelcome = () => {
     setWelcomeOpen(false);
+    setPhoneDisplay(true);
   }
 
   return (
-    <AppContext.Provider value={{ open: welcomeOpen, handleClose, inputValidation, phone, handlePhoneChange, onCloseWelcome: handleCloseWelcome }}>
+    <AppContext.Provider value={{ open: welcomeOpen, handleClose, inputValidation, phone, handlePhoneChange, onCloseWelcome: handleCloseWelcome, phoneDisplay }}>
       {children}
     </AppContext.Provider>
   )

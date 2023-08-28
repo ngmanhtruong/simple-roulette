@@ -10,7 +10,7 @@ import { roulette } from '../data';
 import { AppContext } from './App';
 
 function Roulette() {
-  const {phone} = useContext(AppContext)
+  const {phone, phoneDisplay} = useContext(AppContext)
   const { width, height } = useWindowSize()
   const [open, setOpen] = useState(false);
   const [mustSpin, setMustSpin] = useState(false);
@@ -43,7 +43,7 @@ function Roulette() {
     <>
       <>
         <div className="application">
-          {phone !== "" && <p className="phone-number">Welcome <span style={{ color: "gold" }}>{phone}</span></p>}
+          {phoneDisplay && phone !== "" && <p className="phone-number">Welcome <span style={{ color: "gold" }}>{phone}</span></p>}
           <p>Spin to get a prize!</p>
           <p className="glowing-text">Chances to get a mystery gift</p>
           <button className="spin-button" onClick={handleSpin}>GET YOUR PRIZE</button>
